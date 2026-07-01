@@ -1,39 +1,59 @@
-# x=[101,57,6,98,32,57,98]
-# print(x)
-# ip=int(input("Enter your key to find: "))
-# flag=0
-# for i in x:
-#     if ip==i:
-#         print("key found")
-#         flag=1
-# if flag==0:
-#         print("key not found")
+# -------------------- Linear Search --------------------
 
+# Create List
+x = [101, 57, 6, 98, 32, 57, 98]
 
-# duplicate element find in list
-# x=[101,57,6,98,32,57,98]
-# print(x)
-# print("duplicate keys")
-# y=[]
-# for i in x:
-#     if x.count(i)>1 and i not in y:
-#         print(i)
-#         y.append(i)
-
-
-# print unique element
-x=[101,57,6,98,32,57,98]
+# Display List
 print(x)
-print("Unique element: ")
+
+# Take Key from User
+ip = int(input("Enter your key to find: "))
+
+# Flag Variable
+flag = 0
+
+# Search Element
 for i in x:
-    if x.count(i)<=1:
+    if ip == i:
+        print("Key Found")
+        flag = 1
+
+# If Key Not Found
+if flag == 0:
+    print("Key Not Found")
+
+
+# -------------------- Find Duplicate Elements --------------------
+
+# Create List
+x = [101, 57, 6, 98, 32, 57, 98]
+
+# Display List
+print(x)
+
+print("Duplicate Keys:")
+
+# Empty List to Store Printed Duplicates
+y = []
+
+# Find Duplicate Elements
+for i in x:
+    if x.count(i) > 1 and i not in y:
         print(i)
-
-# print even and odd element
-
+        y.append(i)
 
 
+# -------------------- Print Unique Elements --------------------
 
+# Create List
+x = [101, 57, 6, 98, 32, 57, 98]
 
+# Display List
+print(x)
 
+print("Unique Elements:")
 
+# Print Elements Appearing Only Once
+for i in x:
+    if x.count(i) <= 1:
+        print(i)
